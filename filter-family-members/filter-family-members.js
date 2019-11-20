@@ -51,6 +51,42 @@
 
 
 var filterFamilyMembers = function (familyTree, truthTest) {
-  // All your code in this function body
+	// pass the test for all object of the object family tree  
+	// so using recursion to execute the same test for a family member in a familyTree. 
+	var arr=[];
+
+	for(var key in familyTree){
+
+		// result is an array 
+		var result = filterFamilyMembers(key,truthTest){
+			// test if the family member pass the test passed 
+		};
+		var fresult = var arr.concat(result);
+		
+	}
+
+	return fresult;
+
+  
 };
 
+
+var familyMember = function (firstName,lastName,location,children){
+	return {
+		firstName : firstName,
+		lastName : lastName,
+		location : location,
+		children : children 
+	};
+
+};
+var location = function (familyMember) {
+   return familyMember.location ;
+};
+
+var getchildren = function (familyMember) {
+  return familyMember.children ;
+ };
+var fullName = function(familyMember){
+	return familyMember.firstName + " " + familyMember.lastName ;
+}
